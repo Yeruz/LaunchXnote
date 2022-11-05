@@ -1,0 +1,150 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Nav bar */
+
+nav {
+  width: 100%;
+  height: 14vh;
+  background-color: rgb(29, 29, 29);
+}
+
+.nav-bar {
+  width: 85%;
+  margin: auto;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+}
+
+.nav-bar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #fafafa;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+}
+
+.nav-bar ul li::before {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.4s ease-out;
+}
+
+.nav-bar ul li:hover::before {
+  width: 100%;
+}
+
+/* Form*/
+
+.form-delivery {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.title-flavors {
+  margin: 2rem 0 1rem 2rem;
+  padding-left: 6.5rem;
+  width: 80%;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 2.5em;
+  color: rgb(36, 36, 96);
+}
+
+.forms-text > * {
+  display: block;
+  width: 100%;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+.forms-text > label {
+  margin-top: 0.5rem;
+}
+
+.forms-text {
+  width: 50%;
+  border-radius: 2rem;
+}
+
+.forms-text > * {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  resize: none;
+}
+
+.checkboxs {
+  width: 50%;
+}
+
+.checkboxs input {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  margin-left: 5rem;
+}
+.checkboxs > label {
+  margin-left: 0.5rem;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+.checkboxs > h2 {
+  margin: 3rem 0 1rem 5rem;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+.buttons {
+  width: 30%;
+  height: 5vh;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: 2rem;
+  margin-right: 50rem;
+}
+
+.buttons > * {
+  background-color: rgb(36, 36, 96);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: rgb(252, 250, 250);
+  margin: 0 3rem;
+  padding: 0.75rem 4rem;
+  font-weight: 500;
+  font-size: 1rem;
+}

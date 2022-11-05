@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dulcakes Delivery</title>
+  <link rel="icon" href="./img/favicon.png" />
+  <link rel="stylesheet" href="./css/pedido.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav-bar">
+      <a href="pasteleria.html"><img class="logo" src="./img/Dulcakes.png" alt="logo dulckaes" /></a>
+      <ul>
+        <li><a href="pasteleria.html">Inicio</a></li>
+        <li><a href="pasteleria.html#flavors">Sabores</a></li>
+        <li><a href="pasteleria.html#decorations">Decoraciones</a></li>
+      </ul>
+    </div>
+  </nav>
+  <h1 class="title-flavors">Realiza tus pedidos</h1>
+  <form class="form-delivery">
+    <div class="forms-text">
+      <label for="name">Nombre:</label>
+      <input id="name" type="text" required autocomplete="off" />
+      <label for="tel">Telefono:</label>
+      <input id="tel" type="number" required autocomplete="off" />
+      <label for="email">Email:</label>
+      <input id="email" type="email" required autocomplete="off" />
+      <label for="description">Descripción del pastel:</label>
+      <textarea placeholder="Describe el pasetel..." id="description" cols="30" rows="5"></textarea>
+    </div>
+    <div class="checkboxs">
+      <h2>Sabores</h2>
+      <input type="checkbox" id="vainilla" name="vainilla" />
+      <label for="vainilla">Vainilla</label> <br />
+      <input type="checkbox" id="fruits-red" name="fruits-red" />
+      <label for="fruits-red">Limon</label> <br />
+      <input type="checkbox" id="chocolate" name="chocolate" />
+      <label for="chocolate">Chocolate</label>
+      <h2>Decoraciones</h2>
+      <input type="checkbox" id="chantilly" name="chantilly" />
+      <label for="chantilly">Caramelo Suave</label> <br />
+      <input type="checkbox" id="jalea" name="jalea" />
+      <label for="jalea">Merengue</label><br />
+      <input type="checkbox" id="tropical" name="tropical" />
+      <label for="tropical">Tropical</label><br />
+      <input type="checkbox" id="fondant" name="fondant" />
+      <label for="fondant">Fondant</label><br />
+      <input type="checkbox" id="florales" name="florales" />
+      <label for="florales">Frutas</label><br />
+      <input type="checkbox" id="glaseado" name="glaseado" />
+      <label for="glaseado">Glaseado</label>
+    </div>
+    <div class="buttons">
+      <input type="reset" value="Resetear" />
+      <input type="submit" value="Enviar" />
+    </div>
+  </form>
+</body>
+
+</html>

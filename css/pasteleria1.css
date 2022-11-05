@@ -1,0 +1,341 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.container-nav {
+  width: 100%;
+  height: 60vh;
+  background-image: linear-gradient(rgba(5, 10, 5, 0.1), rgba(90, 40, 90, 0.1)),
+    url(../img/bg-image.jpg);
+  background-size: cover;
+  background-position: 0 -3.3rem;
+  background-repeat: no-repeat;
+}
+
+.nav-bar {
+  width: 85%;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 130px;
+  cursor: pointer;
+}
+
+.nav-bar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #131111;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
+
+.nav-bar ul li::before {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.4s ease-out;
+}
+
+.nav-bar ul li:hover::before {
+  width: 100%;
+}
+
+.hero {
+  color: #fffbd3;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  width: 20rem;
+  position: absolute;
+  top: 10rem;
+  left: 4rem;
+  font-size: 3rem;
+}
+
+/* Section Flavors */
+
+.title-flavors {
+  margin: 2.3rem 0 0 2rem;
+  width: 80%;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 2.5em;
+}
+
+.container-flavors {
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.container-flavors .card-flavors {
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+  background-color: #e9e9e4d5;
+  font-family: sans-serif;
+}
+
+.container-flavors .card-flavors:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container-flavors .card-flavors img {
+  width: 330px;
+  height: 220px;
+}
+
+.container-flavors .card-flavors h3 {
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.container-flavors .card-flavors p {
+  margin: 1rem 0 1.5rem 0;
+  padding: 0 0.4rem 0 0.4rem;
+}
+
+.price {
+  font-weight: 600;
+}
+
+/* Section decorations */
+
+.title-decorations {
+  margin: 2.3rem 0 0 2rem;
+  width: 80%;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 2.5em;
+}
+
+.container-decorations {
+  background-color: rgb(224, 217, 217);
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.container-decorations .card-decorations {
+  width: 330px;
+  height: 310px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+  background-color: #fff;
+  font-family: sans-serif;
+}
+
+.container-decorations .card-decorations:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container-decorations .card-decorations img {
+  width: 330px;
+  height: 220px;
+}
+
+.container-decorations .card-decorations h3 {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  margin: 1rem 0 1rem 0;
+}
+
+.price {
+  font-weight: 600;
+}
+
+/* Information section */
+
+.information-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.title-information {
+  margin: 1.5rem 0 0 2rem;
+  width: 80%;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 2.5em;
+}
+
+.information {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+  position: relative;
+  top: -1.5rem;
+}
+
+.modales {
+  width: 60%;
+  height: 80vh;
+}
+
+iframe {
+  margin: 0.5rem 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.direction {
+  width: 40%;
+  position: relative;
+  left: 58%;
+  top: -10rem;
+  display: flex;
+  flex-direction: row;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+.direction > h3 {
+  margin-left: 1rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 48;
+}
+
+.info {
+  width: 40%;
+  height: 80vh;
+  border-left: medium solid rgb(69, 69, 69);
+  padding-left: 4rem;
+}
+
+.info > h4 {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  color: rgb(7, 71, 110);
+}
+
+.info > h3 {
+  margin-top: 2rem;
+}
+
+.info > p {
+  margin-top: 0.5rem;
+}
+
+.info,
+h3,
+p {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  text-align: center;
+}
+
+.contactos,
+.social-media {
+  width: 50%;
+  height: 40vh;
+}
+
+.contactos > ul > li {
+  text-align: start;
+  margin: 1.5rem 0 1.5rem 1.2rem;
+  list-style-type: circle;
+}
+
+.contactos > h4 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.container-tel-social {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-media > h4 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.media-logos {
+  width: 60%;
+  height: 20vh;
+  margin: 2rem 0 0 3rem;
+}
+
+.media-logos > img {
+  width: 40%;
+}
+
+/* Footer  */
+
+footer {
+  width: 100%;
+  height: 15vh;
+  background-color: #020202;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.logo-footer,
+.copyrigth,
+.cookies {
+  width: 30%;
+  height: 7vh;
+  margin-top: 1rem;
+  color: #f2f2f2;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+.logo-footer img {
+  width: 23%;
+  margin-left: 45%;
+}
+
+.copyrigth {
+  text-align: center;
+  padding-top: 0.5rem;
+  margin-top: 1.8rem;
+}
+
+.cookies li {
+  list-style-type: none;
+  margin-left: 5rem;
+  padding-bottom: 0.5rem;
+}
